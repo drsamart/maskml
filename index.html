@@ -64,6 +64,13 @@
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
+          // noom
+          if(prediction[i].className == "open mask") {
+                if(prediction[i].probability.toFixed(2)=>90){
+                    alert("Hello! I am an alert box!!");
+                }
+          }
+          //
         }
     }
 </script>
